@@ -99,7 +99,7 @@
 
     .owl-carousel .item{
         width: 500px;
-        right: 235px;
+        right: 0px;
     }
 
     .owl-carousel .item img{
@@ -114,16 +114,5 @@
         font-size: 5.3rem;
         letter-spacing: 20px;
         opacity: 1;
-    }
-    
-    .div-frame{
-        width: 900px;
-        height: 800px;
-        bottom: 2000px;
-    }
-
-    .div-frame iframe{
-        height: 600px;
-
     }
 }
