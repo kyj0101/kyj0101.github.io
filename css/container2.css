@@ -1,0 +1,175 @@
+.container2{
+    background-color: #ffe4db ;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+#article-box{
+    background-color:  #FFD2C7;
+    width: 950px;
+    height: 600px;
+    top: 220px;
+    position: relative;
+    display: inline-block;
+}
+
+#about{
+    font-family:'spinwerad';
+    font-size: 12.2em;
+    color: #FFA4A4;
+
+    position: relative;
+    bottom: 750px;
+    right: 320px;
+}
+
+#me{
+    font-family:'spinwerad';
+    font-size: 11em;
+    color: #FFA4A4;
+    
+    position: relative;
+    bottom: 1000px;
+    right: 490px;
+}
+
+.article{
+    line-height: 20px;
+    font-size: 24px;
+    
+    text-align: left;
+    position: relative;
+    font-weight: lighter;
+    bottom: 1300px;
+    left: 920px;
+}
+
+.article > p {
+    display: inline-block;
+    margin: 0px;
+
+    letter-spacing: 1.5px;
+    color: #393939;
+    font-weight: lighter;
+    line-height: 2.5em;
+
+    background-image: linear-gradient(currentColor,currentColor);
+    background-position: 0 100%;
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition: background-size .3s;
+}
+
+.article > p:hover{
+    background-size: 100% 2px;
+}
+
+.index-article{
+    width: 800px;
+    height: 100px;
+    position: absolute;
+    left: 1100px;
+    top: 0;
+    text-align: center;
+}
+.index-article ul{
+    display: flex;
+    padding-top: 10px;
+}
+
+.index-article li{
+    padding: 0px 50px;
+    font-size: 1.6em;
+    white-space: pre;
+    font-weight: lighter;
+}
+
+
+
+
+.index-article a:hover{
+background-size: 100% 2px;
+}
+
+
+.index-article a{
+    padding: 0;
+    text-decoration: none;
+    color: #393939;
+    background-image: linear-gradient(currentColor,currentColor);
+background-position: 0 100%;
+background-size: 0% 2px;
+background-repeat: no-repeat;
+transition: background-size .3s;
+}
+
+
+
+
+@media screen and (max-width:1200px){
+    #article-box{
+        width: 600px;
+        height: 400px;
+        top: 200px;
+
+    }
+    #about{
+        font-size: 8rem;
+        bottom: 430px;
+        right: 200px;
+    }
+    
+    #me{
+        font-size: 7rem;
+        bottom: 600px;
+        right: 320px;
+    }
+    .article{
+        font-size: 16px;
+        left: 420px;
+        bottom: 820px;
+    }
+
+    .index-article{
+        position: absolute;
+        left: 370px;
+
+    }
+
+    .index-article li{
+        padding: 0px 30px;
+        font-size: 1.2em;
+    }
+    
+}
+
+
+@keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+  }
+
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+}
+

@@ -1,0 +1,284 @@
+.container6{
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #ffe2df ;
+}
+
+.card{
+    width: 1500px;
+    height: 750px;
+
+    background-color: #30345c;
+    box-shadow: 0 5px 30px 0 rgba(133, 133, 133, 0.7), 0 17px 17px 0 rgba(143, 143, 143, 0.5);
+    border-radius: 5px;
+    
+    position: relative;
+    margin: 0 auto;
+    margin-top: 70px;
+    text-align: center;
+    vertical-align: middle;
+    top: 0%;
+}
+
+.front{
+    width: 90%;
+    height: 85%;
+    margin-top:45px;    
+    border: 2px solid white;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.front h3{
+    display: inline-block;
+    font-size:8.5em;
+    color: #EF8B8B;
+    text-align: center;
+    letter-spacing: 20px;
+    font-family: 'spinwerad';
+}
+
+.front hr{
+    width: 1000px;
+    border: 2.5px solid white;
+}
+
+.back{
+    width:90%;
+    height: 85%;
+    display: none;
+    border: 2px solid white;
+    margin-top:45px; 
+    transform: rotateY(-180deg);
+}
+
+.back h3{
+    color: #ef8b8bbc;
+    font-family: 'spinwerad';
+    letter-spacing: 15px;
+    margin: 0%;
+    font-size: 8.5em;
+    text-align: left;
+    padding-left: 100px;
+    position: relative;
+}
+
+.back .links{
+    font-size: 3.5em;
+    text-align: right;
+}
+
+.flip-f{
+    animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+.flip-b{
+    animation: flip-vertical-right 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+.links dd{
+    position: relative;
+    left: 920px;
+    padding: 15px;
+    padding-top: 20px;
+    text-align: left;
+}
+
+.links a{
+    font-size: 55px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'spinwerad';
+}
+
+
+.links dd:hover {
+    animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+/*circle text source: https://codepen.io/mattsrinc  */
+#circle{
+    position: absolute;
+    bottom: 0px;
+    top: 390px;
+    left: 10px;
+    width: 250px;
+
+    -webkit-animation-name: rotate;
+     -moz-animation-name: rotate;
+      -ms-animation-name: rotate;
+       -o-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 5s;
+     -moz-animation-duration: 5s;
+      -ms-animation-duration: 5s;
+       -o-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+      -ms-animation-iteration-count: infinite;
+       -o-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+       -o-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+text{
+     fill: white; 
+}
+
+#circle a{
+    color: white;
+    text-decoration: none;
+    fill: white; 
+}
+
+
+/* Copyright (c) 2021 by Cameron Fitzwilliam (https://codepen.io/CameronFitzwilliam/pen/pamobO) */
+.cloud-text {
+	font-family: 'spinwerad';
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;	
+	background-image: url(https://images.unsplash.com/photo-1516166328576-82e16a127024?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+	background-size: auto;
+	background-attachment: unset;
+	background-position: 0%;
+	width: 80%;
+	margin: 10%;
+	font-size: 134px;
+	animation: clouds-moving infinite 220s;
+	animation-fill-mode: forwards;
+	animation-play-state: running;
+	animation-timing-function: linear;
+	text-align: center;
+}
+
+.attribute {
+	position: relative;
+	font-size: 26px;
+	text-align: center;
+}
+
+@keyframes clouds-moving {
+	0% {
+		background-position: 0%;	
+	}
+	50% {
+		background-position: 100%;	
+	}
+	100% {
+		background-position: 0%;
+	}
+}
+  
+@keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      transform: scaleX(1.1);
+    }
+}
+
+@-webkit-keyframes rotate {
+    from { -webkit-transform: rotate(360deg); }
+    to { -webkit-transform: rotate(0); }
+}
+
+@-moz-keyframes rotate {
+        from { -moz-transform: rotate(360deg); }
+        to { -moz-transform: rotate(0); }
+}
+
+@-ms-keyframes rotate {
+        from { -ms-transform: rotate(360deg); }
+        to { -ms-transform: rotate(0); }
+}
+
+@-o-keyframes rotate {
+        from { -o-transform: rotate(360deg); }
+        to { -o-transform: rotate(0); }
+}
+
+@keyframes rotate {
+        from { transform: rotate(360deg); }
+        to { transform: rotate(0); }
+}
+
+@keyframes flip-vertical-left {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(-180deg);
+    }
+  }
+
+  @keyframes flip-vertical-right {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(180deg);
+    }
+  }
+
+  @media screen and (max-width:1200px){
+    .card{
+        width: 800px;
+        height: 600px;
+    }
+    
+    .front{
+        width: 85%;
+        height: 80%;
+    }
+    
+    .back{
+        width:85%;
+        height: 80%;
+    }
+    
+    .back h3{
+        font-size: 6em;
+        padding-left: 40px;
+    }
+    
+    .back .links{
+        font-size: 3.5em;
+    }
+
+    .links dd{
+        top: 30px;
+        left: 470px;
+        padding: 0px;
+        padding-top: 0px;
+    }
+    
+    .links a{
+        font-size: 25px;
+    }
+    
+    #circle{
+        top: 250px;
+        width: 190px;
+    }
+    
+    .cloud-text {
+        font-size: 80px;
+    }
+
+    .attribute {
+	    font-size: 18px;
+    }
+
+  }

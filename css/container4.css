@@ -1,0 +1,79 @@
+
+.container4{
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-color:  #ffe4db ;
+}
+
+.container4 .title{
+    padding-bottom: 20px;
+}
+
+.road-map-p{
+    font-size: 11.5em;
+    font-family: 'spinwerad';
+    letter-spacing: 7px;
+    color: #ef8b8bbc;
+    background-size: 0;
+    background-repeat: no-repeat;
+    padding: 0 30px ;
+    display: inline-block;
+    transition: 0.5s ease;
+    background-image: linear-gradient(#ffbcaa7c,#ffbcaa7c);
+    background-position: 0 100%;
+    background-size: 100% 100px;
+}
+.road-map-p:hover{
+    background-size: 0% 100px;
+}
+
+.line{
+    margin-top: 80px;
+    background-color: #ffc9c97c;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.line li{
+    font-size: 2.2em;
+    font-family:'spinweradC';
+    color: #ef8b8bbc;
+    text-decoration: none;
+    
+    background-image: linear-gradient(currentColor,currentColor);
+    background-position: 0 100%;
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition: background-size .3s;
+}
+
+.line li:hover{
+    background-size: 100% 2px;
+}
+
+.click{
+    animation-fill-mode: forwards;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) none;
+}
+
+@media screen and (max-width:1200px){
+    .road-map-p{
+        font-size: 8.5em;
+        background-size: 100% 80px;
+        margin-bottom: 85px;
+    }
+    .road-map-p:hover{
+        background-size: 0% 80px;
+    }
+
+    .line li{
+        font-size: 1.7em;
+        font-family:'spinweradC';
+        color: #ef8b8bbc;
+        text-decoration: none;
+    }
+    
+}

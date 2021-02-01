@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.min.js"></script>
+    
+    <script src="js/index.js"></script>
+    <script src="js/index_used_jquery.js"></script>
+    
+    <link rel="stylesheet" href="owl.carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.carousel/owl.theme.default.min.css">
+    
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/container1.css">
+    <link rel="stylesheet" href="css/container2.css">
+    <link rel="stylesheet" href="css/container3.css">
+    <link rel="stylesheet" href="css/container4.css">
+    <link rel="stylesheet" href="css/container5.css">
+    <link rel="stylesheet" href="css/container6.css">
+
+    <script src="https://kit.fontawesome.com/d37b4c8496.js" crossorigin="anonymous"></script>
+   
+    <script src="owl.carousel/owl.carousel.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <style>
+        *{
+            font-family: roboto,sans-serif;
+        }
+
+        @font-face {
+            font-family: spinwerad;
+            src: local('spinwerad'),
+            url('font/spinwerad.ttf');
+        }
+
+        @font-face {
+            font-family: spinweradC;
+            src: local('spinweradC'),
+            url('font/spinweradC.ttf');
+        }
+    </style>
+</head>
+<body>
+    <div class="loader-container">
+        <div class="preloader-1">
+            <span class="loading-text">Loading</span>
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+            <span class="line line-4"></span>
+            <span class="line line-5"></span>
+            <span class="line line-6"></span>
+            <span class="line line-7"></span>
+            <span class="line line-8"></span>
+            <span class="line line-9"></span>
+            <span class="line line-10"></span>
+            <span class="line line-11"></span>
+            <span class="line line-12"></span>
+            <span class="line line-13"></span>
+            <span class="line line-14"></span>
+            <span class="line line-15"></span>
+            <span class="line line-16"></span>
+            <span class="line line-17"></span>
+            <span class="line line-18"></span>
+            <span class="line line-19"></span>
+            <span class="line line-20"></span>
+        </div>  
+    </div>   
+    <div class="container">
+
+      <div class="container1 panel">
+        <video src="videos/mainvideo.mp4" class="video" autoplay loop muted="muted"></video>
+        
+        <div class="main-box">
+            <p id="small-name">yujeong kang</p>
+            <hr id="thin-line">
+            <h3>HELLO <br>WORLD!</h3>
+            <hr id="thick-line">
+            <p id="copyright">©2021 YUJEONG KANG</p>
+        </div>
+
+        <div class="name" onclick="mainViewShow();"> 
+          <p id="first-name">Kang</span>
+              <p id="last-name">Yujeong</p>
+              <div id="name-box1"></div>
+              <div id="name-box2"></div>
+        </div>
+        
+        <div class="menu">
+            <ul>
+                <li><a href="#" id="menu-signin">01. SIGNIN</a></li>
+                <li><a href="#" id="menu-login">02. LOGIN</a></li>
+                <li><a href="#" id="menu-index">03. INDEX</a></li>
+                <li><a href="#" id="menu-contact">04. CONTACT</a></li>
+            </ul>
+        </div>
+    
+        <div class="form signin">
+            <i class="far fa-times-circle close"></i>
+              <form action="">
+                  <ul>
+                      <li>
+                          <h3>SIGN IN</h3>
+                      </li>
+                      
+                      <li>
+                          <input type="text" name="signin-id" id="signin-id" placeholder="ID" autocomplete="off" required minlength="3" maxlength="10">
+                      </li>
+                      
+                      <li>
+                          <input type="password" name="signin-password" id="signin-password" autocomplete="off" placeholder="PASSWORD" required minlength="5" maxlength="20">
+                      </li>
+                      
+                      <li>
+                          <input type="button" id="signin-btn" value="CREATE ACCOUNT">
+                      </li>
+                </ul>
+            </form>
+        </div>
+
+        <div class="form login">
+            <i class="far fa-times-circle close"></i>
+              <form action="">
+                  <ul>
+                      <li>
+                          <h3>LOG IN</h3>
+                      </li>
+                      
+                      <li>
+                          <input type="text" name="login-id" id="login-id" placeholder="ID"  autocomplete="off" required minlength="3" maxlength="10">
+                      </li>
+                      
+                      <li>
+                          <input type="password" name="login-password" id="login-password" autocomplete="off" placeholder="PASSWORD" required minlength="5" maxlength="20">
+                      </li>
+                      
+                      <li>
+                          <input type="button" value="LOGIN" id="login-btn">
+                      </li>
+                  </ul>
+              </form>
+        </div>
+
+        <button type="button" id="menu-btn">
+            <hr></hr>
+            <hr></hr>
+        </button>
+
+      </div>
+    
+      <div class="container2 panel">
+          <section>
+              <article class="main-article">
+
+                  <div id="article-box"></div>
+                    <p id="about">About</p>
+                    <p id="me">Me</p>
+
+                  <div class="article">
+                      <p>Hello! I'm Yujeong Kang. I was born in Seoul, Korea  in 1998.</p>
+                      <br>
+                      <p> And I still live in Seoul. I learned fashion design at Yale</p>
+                      <br>
+                      <p>Design High School and now I am studying software</p>
+                      <br>
+                      <p>development at kh academy. I am interested in software</p>
+                      <br>
+                      <p>development and design. If you have any questions,</p>
+                      <br>
+                      <p> feel free to contact me :D</p>
+                  </div>
+
+            </article>
+
+            <article class="index-article">
+
+                <ul>
+                    <li><a href="#skills" id="moveSkill">01. Skills</a></li>
+                    <li><a href="#roadmap" id="moveRoadMap">02. Road Map</a></li>
+                    <li><a href="#favorite" id="moveFTh">03. Favorite Things</a></li>
+                </ul>
+
+            </article>
+
+        </section>
+      </div>
+
+        <div class="container3 panel"  id="skillcon">
+            <section>
+                <p id="skills">Skills</p>
+                <div class="cards">
+                <ul>
+                    <li><a><i class="fab fa-java"></i><br>JAVA</a></li>
+                    <li><a><i class="fas fa-database"></i><br>ORACLE</a></li>
+                    <li><a><i class="fab fa-js-square"></i><br>JS</a></li>
+                    <li><a><i class="fab fa-html5"></i><br>HTML5</a></li>
+                    <li><a><i class="fab fa-css3"></i><br>CSS3</a></li>
+                </ul>
+                </div>
+            </section>
+        </div>
+
+        
+
+        <div class="container4 panel">
+            <section>
+                <h3 class="title" id="roadmap">ROAD MAP</h3>
+                <p class="road-map-p" id="roadText">Node.js</p>
+                <ul class="line">
+                    <li class="year">2021</li>
+                    <li class="year">2022</li>
+                    <li class="year">2023</li>
+                    <li class="year">2024</li>
+                    <li class="year">2025</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="container5 panel">
+          <section>
+            <h3 class="title" id="favorite">FAVORITE THINGS</h3>
+            <div class="owl-carousel owl-theme">
+                <dl class="item">
+                    <p onclick="siteShow('painting');">Painting</p>
+                    <img id="painting-img" src="img/painting.jpg" alt="그림을 그리는 사진">
+                </dl>
+                <dl class="item">
+                    <p onclick="siteShow('music');">Music</p>
+                    <img src="img/music.jpg" alt="악기를 연주하는 사진">
+                </dl>
+                <dl class="item" >
+                    <p onclick="siteShow('cat');">Cat</p>
+                    <img src="img/cat.jpg" alt="고양이 사진">
+                </dl> 
+                <dl class="item" >
+                    <p onclick="siteShow('greece');">Greece</p>
+                    <img src="img/greece.jpg" alt="그리스 아테네 사진">
+                </dl>
+                <dl class="item">
+                    <p onclick="siteShow('coffee')";>Coffee</p>
+                    <img src="img/coffee.jpg" alt="커피 사진">
+                </dl>
+            </div>
+          </section>
+        </div>
+
+        <div class="container6 panel">
+          <div class="card">
+            <dl class="front">
+                <p class="cloud-text cloud-title">CONTACT ME!</p>
+                <p class="cloud-text attribute">Photo by Nacho Rochon on Unsplash</a></p>
+            </dl>
+
+            <dl class="back">
+                <h3 class="cloud-text cloud-title">CONTACT</h3>
+                <dl class="links">
+                    <dd><a href="https://github.com/kyj0101" target="_blank">Git</a></dd>
+                    <dd><a href="mailto:이메일주소">Email</a></dd>
+                    <dd><a href="">Notion</a></dd>
+                </dl>
+                <svg class="circle-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve" id="circle">
+                  <defs>
+                      <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "/>
+                  </defs>
+                  <circle cx="150" cy="100" r="75" fill="none"/>
+                  <g>
+                      <use xlink:href="#circlePath" fill="none"/>
+                      <text>
+                          <textPath xlink:href="#circlePath"><a href="etc/information.txt" target="_blank" style="color: white;">
+                            INFORMATION - INFORMATION - INFORMATION - INFORMATION</a></textPath>
+                      </text>                                
+                  </g>
+                </svg>
+            </dl>
+          </div>
+      </div>
+
+      <script>
+    
+        gsap.registerPlugin(ScrollTrigger);
+
+        let sections = gsap.utils.toArray(".panel");
+        gsap.to(sections, {
+        xPercent: -100 * (sections.length - 1),
+        ease: "none",
+        scrollTrigger: {
+        trigger: ".container",
+        pin: true,
+        scrub: 1,
+        snap: 1 / (sections.length - 1),
+        // base vertical scrolling on how wide the container is so it feels more natural.
+        end: () => "+=" + document.querySelector(".container").offsetWidth
+        }
+    });
+
+      </script>
+</body>
+</html>
