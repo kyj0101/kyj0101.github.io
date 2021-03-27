@@ -151,19 +151,19 @@ video{
     position: relative;
 }
 .menuBtnX-f{
-    animation: .8s menuBtnX-f 0.5s cubic-bezier(0.45, 0.50, 0.38, 0.86) both;
+    animation: .5s menuBtnX-f 0.4s cubic-bezier(0.45, 0.50, 0.38, 0.86) both;
 }
 
 .menuBtnX-l{
-    animation: .8s menuBtnX-l 0.5s cubic-bezier(0.45, 0.50, 0.38, 0.86) both;
+    animation: .5s menuBtnX-l 0.4s cubic-bezier(0.45, 0.50, 0.38, 0.86) both;
 }
 
 .menuBtnH-f{
-    animation: .6s  menuBtnH-f 0.5s cubic-bezier(0.45, 0.50, 0.38, 0.86) both;
+    animation: .4s  menuBtnH-f 0.4s cubic-bezier(0.45, 0.50, 0.38, 0.86) both;
 }
 
 .menuBtnH-l{
-    animation: .6s  menuBtnH-l 0.5s cubic-bezier(0.45, 0.50, 0.38, 0.86) both;
+    animation: .4s  menuBtnH-l 0.4s cubic-bezier(0.45, 0.50, 0.38, 0.86) both;
 }
 
 .form{

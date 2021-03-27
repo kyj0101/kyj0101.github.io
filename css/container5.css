@@ -44,7 +44,7 @@
     
 }
 
-.owl-carousel .item p{
+.owl-carousel .item a{
     opacity: 0;
 }
 
@@ -61,7 +61,7 @@
     }
   }
 
-.owl-item.center p{
+.owl-item.center a{
     display: inline-block;
     z-index: 5;
     position: absolute;
@@ -75,7 +75,7 @@
     opacity: 1;
     animation: .2s fade-in 1.5s forwards;
     animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-    
+    text-decoration: none;
 }
 
 .owl-item.center img{
