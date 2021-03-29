@@ -9,9 +9,9 @@
 video{
     display: inline-block;
     
-    width: 90%;
+    width: 95%;
     height: 100%;
-    margin: 0 auto;
+    margin: 0 105px 0 0;
 
     object-fit:cover;
     opacity: 0;
@@ -19,7 +19,7 @@ video{
 
 .main-box{
     background-color: rgb(255, 255, 255);
-    opacity: 0;
+    opacity:0;
 
     width: 41.5rem;
     height: 47rem;
@@ -73,9 +73,10 @@ video{
     margin-top: 30px;
 }
 
+
 .menu{
     background-color: #ffc2c2;
-    position: absolute;
+    position: relative;
     width: 45%;
     height: 100%;
     bottom: 0%;
@@ -129,42 +130,7 @@ video{
     animation: scale-up 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) alternate both;
 }
 
-#menu-btn{
-    border: none;
-    background-color: transparent;
 
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    bottom: 500px;
-    outline: none;
-    left: 0%;
-}
-
-#menu-btn hr{
-    background-color: white;
-    border: 1.5px solid white;
-
-    height: 0px;
-    width: 45px;
-    margin: 20px 12px;
-    position: relative;
-}
-.menuBtnX-f{
-    animation: .5s menuBtnX-f 0.4s cubic-bezier(0.45, 0.50, 0.38, 0.86) both;
-}
-
-.menuBtnX-l{
-    animation: .5s menuBtnX-l 0.4s cubic-bezier(0.45, 0.50, 0.38, 0.86) both;
-}
-
-.menuBtnH-f{
-    animation: .4s  menuBtnH-f 0.4s cubic-bezier(0.45, 0.50, 0.38, 0.86) both;
-}
-
-.menuBtnH-l{
-    animation: .4s  menuBtnH-l 0.4s cubic-bezier(0.45, 0.50, 0.38, 0.86) both;
-}
 
 .form{
     position: absolute;
