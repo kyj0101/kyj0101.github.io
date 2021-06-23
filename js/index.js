@@ -65,22 +65,6 @@ function divSkills(){
     text.style.animation = "tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both";
 }
 
-function siteShow(type){
-    console.log(type);
-    if(type === 'painting'){
-        open("https://www.philipbarlow.com/","philipbarlow");
-        return;
-    }else if(type === 'music'){
-        open("https://www.youtube.com/embed/ibGU3kyiXrg","music");
-    }else if(type === 'cat'){
-        open("https://www.youtube.com/embed/z3U0udLH974","greece");
-    }else if(type === 'greece'){
-        open("https://www.youtube.com/embed/54xXb7R33rQ","greece");
-    }else if(type === 'coffee'){
-        open("https://www.pexels.com/ko-kr/video/4786576/","coffee");
-    }
-    
-}
 
 function iframeClose(){
     var  boxs = document.querySelector('.owl-carousel');

@@ -69,8 +69,8 @@ body::-webkit-scrollbar {
   transform-origin: top left;
 }
 
-.menu-line div:first-of-type a{
-  bottom: 77%;
+.menu-line div:first-of-type p{
+  bottom: 80%;
 }
 
 #menu-btn{

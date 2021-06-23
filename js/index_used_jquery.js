@@ -74,7 +74,7 @@ $(document).ready(function() {
 
     var $years = $('.line li');
     var langArr = ['Node.js','Python','C#','Rust','Ruby']
-    console.log($years);
+
     $years.each(function(index, elem){
         $years.eq(index).click(function(){
             var $roadMapP = $('.road-map-p');
@@ -202,4 +202,10 @@ $(document).ready(function() {
     $(moveFTh).click(function(){
         $('html, body').animate({scrollTop : 6900}, 300);
     })
+
+    $(movePro).click(function(){
+        $('html, body').animate({scrollTop : 6900}, 300);
+    })
+
+    
 })

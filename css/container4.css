@@ -29,6 +29,10 @@
     background-size: 0% 100px;
 }
 
+.year:hover{
+    cursor: pointer;
+}
+
 .line{
     margin-top: 80px;
     background-color: #ffc9c97c;

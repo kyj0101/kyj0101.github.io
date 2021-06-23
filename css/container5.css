@@ -33,12 +33,13 @@
     position: relative;
     display: inline-block;
     text-align: center;
+    border-radius: 10px;
 }
 
 .owl-carousel .item img{
     width: 520px;
-    height: 650px;
-    border-radius: 5px;
+    height: 680px;
+    border-radius: 10px;
     opacity: 0.5;
     margin: 0 auto;
     
@@ -83,7 +84,7 @@
 }
 
 .owl-item.center{
-    top: 55px;
+    top: 40px;
 }
 
 .owl-dots {
